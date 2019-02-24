@@ -6,9 +6,10 @@ chocolateBars = [
 ];
 
 function addElementToBeginningOfArray(arr, array_element) {
-  return arr.unshift(array_element);
+  return [array_element, ...arr];
+
 }
 
 function destructivelyAddElementToBeginningOfArray(arr, array_element) {
-  return [array_element, ...arr];
+  return arr.unshift(array_element);
 }
